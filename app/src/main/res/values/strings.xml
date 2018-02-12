@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">vpndemo</string>
+    <string name="chat">微信</string>
+    <string name="discover">发现</string>
+    <string name="contract">通讯录</string>
+    <string name="me">我</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="register">新用户</string>
+    <string name="login">登入</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="registers">注册</string>
+</resources>

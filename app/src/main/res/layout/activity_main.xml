@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="?attr/colorPrimary">
+
+        <com.Utils.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="47dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/lsy"
+            app:civ_border_color="@color/light"
+
+            app:civ_border_width="2dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            app:srcCompat="@mipmap/icon_search" />
+
+        <ImageView
+            android:id="@+id/imageVie2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/set_touch_bg"
+            app:srcCompat="@mipmap/icon_adds" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgwhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_chat"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_better"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/chat"
+            android:textColor="@drawable/tab_menu_test"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_contract"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_betters"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/contract"
+            android:textColor="@drawable/tab_menu_test"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_diacover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_betterss"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/discover"
+            android:textColor="@drawable/tab_menu_test"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_bettersss"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/me"
+            android:textColor="@drawable/tab_menu_test"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_bar"
+        android:background="@color/div_white" />
+
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/toolbar">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weix"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_menu_group"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:background="@drawable/set_touch_bg"
+
+        android:text="发起群聊"
+        android:gravity="center_vertical"
+        android:textColor="@color/light"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#1c2023"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_menu_addfriend"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:background="@drawable/set_touch_bg"
+
+        android:text="加好友"
+        android:gravity="center_vertical"
+        android:textColor="@color/light"
+        android:textSize="15sp" />
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#1c2023"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_menu_sao"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:background="@drawable/set_touch_bg"
+
+        android:text="扫一扫"
+        android:gravity="center_vertical"
+        android:textColor="@color/light"
+        android:textSize="15sp" />
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#1c2023"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/abv"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:background="@drawable/set_touch_bg"
+
+        android:text="转账"
+        android:gravity="center_vertical"
+        android:textColor="@color/light"
+        android:textSize="15sp" />
+
+</LinearLayout>

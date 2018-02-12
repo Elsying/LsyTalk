@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="Activity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.Activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.Activity.MainActivity"  android:theme="@style/Theme.general"/>
+        <activity android:name="com.Activity.ChooseActivity" android:theme="@style/Theme.general"/>
+        <activity android:name="com.Activity.LoginActivity" android:theme="@style/Theme.general"/>
+        <activity android:name="com.Activity.RegisterActivity" android:theme="@style/Theme.general"/>
+        <activity android:name="com.Activity.AddfriendActivity" android:theme="@style/Theme.general"/>
+        <activity android:name="com.Activity.SearchActivity" android:theme="@style/Theme.general"/>
+
+
+
+
+
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+</manifest>

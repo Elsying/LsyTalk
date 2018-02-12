@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbaradd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayou">
+        <ImageView
+            android:id="@+id/toolbarimage"
+            android:background="@drawable/set_touch_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/toolbartext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@mipmap/tm" />
+        <View
+            android:layout_height="30dip"
+            android:background="#FF222222"
+            android:layout_alignRight="@+id/toolbarimage"
+            android:layout_marginTop="12dp"
+            android:layout_width="0.5dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/toolbarimage"
+            android:layout_toEndOf="@+id/toolbarimage" />
+
+        <TextView
+            android:id="@+id/toolbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="12dp"
+            android:text="添加朋友"
+            android:textSize="20sp"
+            android:textColor="@color/light"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbaradd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/search"
+        android:id="@+id/RelativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/allsearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+
+            android:onClick="onClick"
+            android:clickable="true"
+
+            android:background="@color/div_white">
+
+            <ImageView
+                android:id="@+id/search_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@mipmap/searchfriend" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/search_badge"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/searchgreen" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:text="账号/用户名"
+                android:textColor="#c3c3c3"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/addfunction"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/div_white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

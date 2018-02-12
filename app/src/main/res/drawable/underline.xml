@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="#dddddd" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item android:bottom="1dp"> <!--设置只有底部有边框    给控件设置下划线,也可以左右设置边框-->
+        <shape>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <item>
+        <selector>   <!--触摸变色-->
+           <item android:state_pressed="true"  android:drawable="@color/result"/>
+    </selector>
+    </item>
+
+</layer-list>

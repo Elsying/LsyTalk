@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/register_pictures"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@color/bgwhite"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/register_pictures"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_users"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/register_pictures">
+        <LinearLayout
+            android:id="@+id/ll_user_infos"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/accounts"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="text"
+                android:hint="@string/account"
+                android:background="@color/login_et_bg"
+                android:layout_margin="2dp"/>
+            <View
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/devide_line"/>
+
+            <EditText
+                android:id="@+id/passwords"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:background="@color/login_et_bg"
+                android:layout_margin="2dp"/>
+
+            <View
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/devide_line"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/registers"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/registers"
+            android:layout_below="@id/ll_user_infos"
+            android:background="@drawable/login_btn"
+            android:textColor="@android:color/white"/>
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@mipmap/right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
