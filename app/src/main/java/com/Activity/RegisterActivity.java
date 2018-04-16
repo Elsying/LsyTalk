@@ -41,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private Handler handler = new Handler();
 
-    public  String url = "http://172.16.0.1:8080/hello/ResignServlet";
+    public  String url = "http://20k35674c4.51mypc.cn:9999/AndroidLogin/ResignServlet";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

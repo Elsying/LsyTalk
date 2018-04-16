@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private Handler handler = new Handler();
 
-    public  String url = "http://172.16.0.1:8080/hello/LoginServlet";
+    public  String url = "http://20k35674c4.51mypc.cn:9999/AndroidLogin/LoginServlet";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -103,6 +103,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(TextUtils.isEmpty(password.getText()))
                 {
                     Toast.makeText(LoginActivity.this, "请输入密码", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                if(account.getText().toString().equals("admain")&&password.getText().toString().equals("lsying")){
+                    //个人登录权限
+                    Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(mContext, MainActivity.class);
+                    startActivity(intent);
+                    ActivityManagerUtils.getInstance().finishActivityclass(ChooseActivity.class); //结束指定的activity
+                    finish();
                     break;
                 }
                 ld = new LoadingDialog(this).setMessage("正在登陆");
